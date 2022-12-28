@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "576px",
+            xl: "1440px",
+          },
+          extend: {
+            colors: {
+              primary: "#0536FC",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="xl:container mx-auto px-5 xl:px-0">
+      <div class="flex flex-col py-10 xl:block xl:pl-[210px] xl:py-[100px]">
+        <h2 class="text-primary font-bold leading-5 uppercase mb-8">програма</h2>
+
+        <p class="uppercase text-6xl mb-16 font-bold mb-[70px]">Навчай — для України</p>
+
+        <p class="opacity-60 mb-[100px]">Освітньо-громадська організація.</p>
+      </div>
+      <nav class="list-none flex">
+        <li
+          class="flex items-center justify-center bg-primary text-white leading-5 uppercase h-[90px] w-1/2 border-t border-transparent"
+        >
+          про нас
+        </li>
+        <li
+          class="flex items-center justify-center text-primary leading-5 uppercase h-[90px] w-1/2 border-t border-black border-opacity-[0.15]"
+        >
+          наша діяльність
+        </li>
+      </nav>
+      <main class="relative">
+        <img src="./backgroundImage.jpeg" />
+        <div
+          class="xl:absolute right-0 bottom-0 bg-white xl:w-1/2 max-h-full flex flex-col justify-center p-10 xl:p-28"
+        >
+          <h2 class="text-primary leading-5 font-bold uppercase mb-8">хто ми</h2>
+
+          <p class="text-[32px] uppercase font-bold mb-[70px]">амбітня команда — однодумців</p>
+
+          <p class="opacity-60 mb-[100px]">
+            Команда спеціалістів, що 4 роки успішно займається освітою дітей у
+            малорозвинутих селах та містах України.
+          </p>
+
+          <a class="shrink-0 flex items-center justify-center uppercase bg-primary text-white h-[55px] w-[200px]">стати учасником</a>
+        </div>
+      </main>
+    </section>
+  </body>
+</html>
